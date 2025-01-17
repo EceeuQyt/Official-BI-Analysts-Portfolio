@@ -1,0 +1,1774 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='climate_change_impact_on_agriculture_2024+' inline='true' name='federated.0ka909a17j6qhn0zitmrw1bo9rjg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='climate_change_impact_on_agriculture_2024' name='textscan.199xccq1v7p8we1bx1rr70nddi7i'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/TyQueece/Documents/Code Academy/Official Portfoilio/Agriculture Variations/climate_change_impact_on_agriculture_2024.csv' dataRefreshTime='' directory='C:/Users/TyQueece/Documents/Code Academy/Official Portfoilio/Agriculture Variations' filename='C:/Users/TyQueece/AppData/Local/Temp/TableauTemp/076e1zo1mp7l2h0zs3drz0mp5vzz/climate_change_impact_on_agriculture_2024.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.199xccq1v7p8we1bx1rr70nddi7i' name='climate_change_impact_on_agriculture_2024.csv' table='[C:\Users\TyQueece\Documents\Code Academy\Official Portfoilio\Agriculture Variations\climate_change_impact_on_agriculture_2024#csv]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:O10001:no:A1:O10001:1' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Year' ordinal='0' />
+              <column datatype='string' name='Country' ordinal='1' />
+              <column datatype='string' name='Region' ordinal='2' />
+              <column datatype='string' name='Crop_Type' ordinal='3' />
+              <column datatype='real' name='Average_Temperature_C' ordinal='4' />
+              <column datatype='real' name='Total_Precipitation_mm' ordinal='5' />
+              <column datatype='real' name='CO2_Emissions_MT' ordinal='6' />
+              <column datatype='real' name='Crop_Yield_MT_per_HA' ordinal='7' />
+              <column datatype='integer' name='Extreme_Weather_Events' ordinal='8' />
+              <column datatype='real' name='Irrigation_Access_%' ordinal='9' />
+              <column datatype='real' name='Pesticide_Use_KG_per_HA' ordinal='10' />
+              <column datatype='real' name='Fertilizer_Use_KG_per_HA' ordinal='11' />
+              <column datatype='real' name='Soil_Health_Index' ordinal='12' />
+              <column datatype='string' name='Adaptation_Strategies' ordinal='13' />
+              <column datatype='real' name='Economic_Impact_Million_USD' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.199xccq1v7p8we1bx1rr70nddi7i' name='crop_yield.csv' table='[crop_yield#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Region' ordinal='0' />
+              <column datatype='string' name='Soil_Type' ordinal='1' />
+              <column datatype='string' name='Crop' ordinal='2' />
+              <column datatype='real' name='Rainfall_mm' ordinal='3' />
+              <column datatype='real' name='Temperature_Celsius' ordinal='4' />
+              <column datatype='boolean' name='Fertilizer_Used' ordinal='5' />
+              <column datatype='boolean' name='Irrigation_Used' ordinal='6' />
+              <column datatype='string' name='Weather_Condition' ordinal='7' />
+              <column datatype='integer' name='Days_to_Harvest' ordinal='8' />
+              <column datatype='real' name='Yield_tons_per_hectare' ordinal='9' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[Adaptation_Strategies]' value='[climate_change_impact_on_agriculture_2024.csv].[Adaptation_Strategies]' />
+          <map key='[Average_Temperature_C]' value='[climate_change_impact_on_agriculture_2024.csv].[Average_Temperature_C]' />
+          <map key='[CO2_Emissions_MT]' value='[climate_change_impact_on_agriculture_2024.csv].[CO2_Emissions_MT]' />
+          <map key='[Country]' value='[climate_change_impact_on_agriculture_2024.csv].[Country]' />
+          <map key='[Crop]' value='[crop_yield.csv].[Crop]' />
+          <map key='[Crop_Type]' value='[climate_change_impact_on_agriculture_2024.csv].[Crop_Type]' />
+          <map key='[Crop_Yield_MT_per_HA]' value='[climate_change_impact_on_agriculture_2024.csv].[Crop_Yield_MT_per_HA]' />
+          <map key='[Days_to_Harvest]' value='[crop_yield.csv].[Days_to_Harvest]' />
+          <map key='[Economic_Impact_Million_USD]' value='[climate_change_impact_on_agriculture_2024.csv].[Economic_Impact_Million_USD]' />
+          <map key='[Extreme_Weather_Events]' value='[climate_change_impact_on_agriculture_2024.csv].[Extreme_Weather_Events]' />
+          <map key='[Fertilizer_Use_KG_per_HA]' value='[climate_change_impact_on_agriculture_2024.csv].[Fertilizer_Use_KG_per_HA]' />
+          <map key='[Fertilizer_Used]' value='[crop_yield.csv].[Fertilizer_Used]' />
+          <map key='[Irrigation_Access_%]' value='[climate_change_impact_on_agriculture_2024.csv].[Irrigation_Access_%]' />
+          <map key='[Irrigation_Used]' value='[crop_yield.csv].[Irrigation_Used]' />
+          <map key='[Pesticide_Use_KG_per_HA]' value='[climate_change_impact_on_agriculture_2024.csv].[Pesticide_Use_KG_per_HA]' />
+          <map key='[Rainfall_mm]' value='[crop_yield.csv].[Rainfall_mm]' />
+          <map key='[Region (crop_yield.csv)]' value='[crop_yield.csv].[Region]' />
+          <map key='[Region]' value='[climate_change_impact_on_agriculture_2024.csv].[Region]' />
+          <map key='[Soil_Health_Index]' value='[climate_change_impact_on_agriculture_2024.csv].[Soil_Health_Index]' />
+          <map key='[Soil_Type]' value='[crop_yield.csv].[Soil_Type]' />
+          <map key='[Temperature_Celsius]' value='[crop_yield.csv].[Temperature_Celsius]' />
+          <map key='[Total_Precipitation_mm]' value='[climate_change_impact_on_agriculture_2024.csv].[Total_Precipitation_mm]' />
+          <map key='[Weather_Condition]' value='[crop_yield.csv].[Weather_Condition]' />
+          <map key='[Year]' value='[climate_change_impact_on_agriculture_2024.csv].[Year]' />
+          <map key='[Yield_tons_per_hectare]' value='[crop_yield.csv].[Yield_tons_per_hectare]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:O10001:no:A1:O10001:1&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[crop_yield.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crop_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Crop_Type]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Crop_Type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average_Temperature_C</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average_Temperature_C]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Average_Temperature_C</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Precipitation_mm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_Precipitation_mm]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Total_Precipitation_mm</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO2_Emissions_MT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO2_Emissions_MT]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>CO2_Emissions_MT</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crop_Yield_MT_per_HA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Crop_Yield_MT_per_HA]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Crop_Yield_MT_per_HA</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Extreme_Weather_Events</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Extreme_Weather_Events]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Extreme_Weather_Events</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Irrigation_Access_%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Irrigation_Access_%]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Irrigation_Access_%</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pesticide_Use_KG_per_HA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pesticide_Use_KG_per_HA]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Pesticide_Use_KG_per_HA</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fertilizer_Use_KG_per_HA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fertilizer_Use_KG_per_HA]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Fertilizer_Use_KG_per_HA</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Soil_Health_Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Soil_Health_Index]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Soil_Health_Index</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adaptation_Strategies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Adaptation_Strategies]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Adaptation_Strategies</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Economic_Impact_Million_USD</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Economic_Impact_Million_USD]</local-name>
+            <parent-name>[climate_change_impact_on_agriculture_2024.csv]</parent-name>
+            <remote-alias>Economic_Impact_Million_USD</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region (crop_yield.csv)]</local-name>
+            <parent-name>[crop_yield.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Soil_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Soil_Type]</local-name>
+            <parent-name>[crop_yield.csv]</parent-name>
+            <remote-alias>Soil_Type</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crop</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Crop]</local-name>
+            <parent-name>[crop_yield.csv]</parent-name>
+            <remote-alias>Crop</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rainfall_mm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rainfall_mm]</local-name>
+            <parent-name>[crop_yield.csv]</parent-name>
+            <remote-alias>Rainfall_mm</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temperature_Celsius</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Temperature_Celsius]</local-name>
+            <parent-name>[crop_yield.csv]</parent-name>
+            <remote-alias>Temperature_Celsius</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fertilizer_Used</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Fertilizer_Used]</local-name>
+            <parent-name>[crop_yield.csv]</parent-name>
+            <remote-alias>Fertilizer_Used</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Irrigation_Used</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Irrigation_Used]</local-name>
+            <parent-name>[crop_yield.csv]</parent-name>
+            <remote-alias>Irrigation_Used</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weather_Condition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weather_Condition]</local-name>
+            <parent-name>[crop_yield.csv]</parent-name>
+            <remote-alias>Weather_Condition</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Days_to_Harvest</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Days_to_Harvest]</local-name>
+            <parent-name>[crop_yield.csv]</parent-name>
+            <remote-alias>Days_to_Harvest</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Yield_tons_per_hectare</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Yield_tons_per_hectare]</local-name>
+            <parent-name>[crop_yield.csv]</parent-name>
+            <remote-alias>Yield_tons_per_hectare</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Average_Temperature_C:qk]&quot;' value='Avg. Temp' />
+          <alias key='&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:CO2_Emissions_MT:qk]&quot;' value='Avg. CO2 Emissions' />
+          <alias key='&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Fertilizer_Use_KG_per_HA:qk]&quot;' value='Avg. Fertilizer Per HA' />
+          <alias key='&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Irrigation_Access_\%:qk]&quot;' value='Avg. Irrigation %' />
+        </aliases>
+      </column>
+      <column caption='Adaptation Strategies' datatype='string' name='[Adaptation_Strategies]' role='dimension' type='nominal' />
+      <column caption='Average Temperature C' datatype='real' name='[Average_Temperature_C]' role='measure' type='quantitative' />
+      <column caption='CO2 Emissions MT' datatype='real' name='[CO2_Emissions_MT]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Crop]' role='dimension' type='nominal' />
+      <column caption='Crop Type' datatype='string' name='[Crop_Type]' role='dimension' type='nominal' />
+      <column caption='Crop Yield MT per HA' datatype='real' name='[Crop_Yield_MT_per_HA]' role='measure' type='quantitative' />
+      <column caption='Days to Harvest' datatype='integer' name='[Days_to_Harvest]' role='measure' type='quantitative' />
+      <column caption='Economic Impact Million USD' datatype='real' name='[Economic_Impact_Million_USD]' role='measure' type='quantitative' />
+      <column caption='Extreme Weather Events' datatype='integer' name='[Extreme_Weather_Events]' role='measure' type='quantitative' />
+      <column caption='Fertilizer Use KG per HA' datatype='real' name='[Fertilizer_Use_KG_per_HA]' role='measure' type='quantitative' />
+      <column caption='Fertilizer Used' datatype='boolean' name='[Fertilizer_Used]' role='dimension' type='nominal' />
+      <column caption='Irrigation Access %' datatype='real' name='[Irrigation_Access_%]' role='measure' type='quantitative' />
+      <column caption='Irrigation Used' datatype='boolean' name='[Irrigation_Used]' role='dimension' type='nominal' />
+      <column caption='Pesticide Use KG per HA' datatype='real' name='[Pesticide_Use_KG_per_HA]' role='measure' type='quantitative' />
+      <column caption='Rainfall mm' datatype='real' name='[Rainfall_mm]' role='measure' type='quantitative' />
+      <column caption='Region (crop yield.csv)' datatype='string' name='[Region (crop_yield.csv)]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Soil Health Index (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Soil_Health_Index]' peg='0' size='1.55' />
+      </column>
+      <column caption='Soil Health Index' datatype='real' name='[Soil_Health_Index]' role='measure' type='quantitative' />
+      <column caption='Soil Type' datatype='string' name='[Soil_Type]' role='dimension' type='nominal' />
+      <column caption='Temperature Celsius' datatype='real' name='[Temperature_Celsius]' role='measure' type='quantitative' />
+      <column caption='Total Precipitation mm' datatype='real' name='[Total_Precipitation_mm]' role='measure' type='quantitative' />
+      <column caption='Weather Condition' datatype='string' name='[Weather_Condition]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Yield tons per hectare' datatype='real' name='[Yield_tons_per_hectare]' role='measure' type='quantitative' />
+      <column caption='climate_change_impact_on_agriculture_2024.csv' datatype='table' name='[__tableau_internal_object_id__].[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]' role='measure' type='quantitative' />
+      <column caption='crop_yield.csv' datatype='table' name='[__tableau_internal_object_id__].[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]' role='measure' type='quantitative' />
+      <column-instance column='[Average_Temperature_C]' derivation='Avg' name='[avg:Average_Temperature_C:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO2_Emissions_MT]' derivation='Avg' name='[avg:CO2_Emissions_MT:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Crop_Yield_MT_per_HA]' derivation='Avg' name='[avg:Crop_Yield_MT_per_HA:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Fertilizer_Use_KG_per_HA]' derivation='Avg' name='[avg:Fertilizer_Use_KG_per_HA:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Irrigation_Access_%]' derivation='Avg' name='[avg:Irrigation_Access_%:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Soil_Health_Index]' derivation='Avg' name='[avg:Soil_Health_Index:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total_Precipitation_mm]' derivation='Avg' name='[avg:Total_Precipitation_mm:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Crop]' derivation='None' name='[none:Crop:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Average_Temperature_C]' derivation='Sum' name='[sum:Average_Temperature_C:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO2_Emissions_MT]' derivation='Sum' name='[sum:CO2_Emissions_MT:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Crop_Yield_MT_per_HA]' derivation='Sum' name='[sum:Crop_Yield_MT_per_HA:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Fertilizer_Use_KG_per_HA]' derivation='Sum' name='[sum:Fertilizer_Use_KG_per_HA:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Soil_Health_Index]' derivation='Sum' name='[sum:Soil_Health_Index:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/TyQueece/AppData/Local/Temp/TableauTemp/#TableauTemp_128051015gckci12oxwu80yl7asv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/16/2025 08:14:55 AM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4' table='[Extract].[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]' type='table' />
+            <relation name='crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA' table='[Extract].[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]' type='table' />
+          </relation>
+          <cols>
+            <map key='[Adaptation_Strategies]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Adaptation_Strategies]' />
+            <map key='[Average_Temperature_C]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Average_Temperature_C]' />
+            <map key='[CO2_Emissions_MT]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[CO2_Emissions_MT]' />
+            <map key='[Country]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Country]' />
+            <map key='[Crop]' value='[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA].[Crop]' />
+            <map key='[Crop_Type]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Crop_Type]' />
+            <map key='[Crop_Yield_MT_per_HA]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Crop_Yield_MT_per_HA]' />
+            <map key='[Days_to_Harvest]' value='[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA].[Days_to_Harvest]' />
+            <map key='[Economic_Impact_Million_USD]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Economic_Impact_Million_USD]' />
+            <map key='[Extreme_Weather_Events]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Extreme_Weather_Events]' />
+            <map key='[Fertilizer_Use_KG_per_HA]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Fertilizer_Use_KG_per_HA]' />
+            <map key='[Fertilizer_Used]' value='[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA].[Fertilizer_Used]' />
+            <map key='[Irrigation_Access_%]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Irrigation_Access_%]' />
+            <map key='[Irrigation_Used]' value='[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA].[Irrigation_Used]' />
+            <map key='[Pesticide_Use_KG_per_HA]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Pesticide_Use_KG_per_HA]' />
+            <map key='[Rainfall_mm]' value='[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA].[Rainfall_mm]' />
+            <map key='[Region (crop_yield.csv)]' value='[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA].[Region]' />
+            <map key='[Region]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Region]' />
+            <map key='[Soil_Health_Index]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Soil_Health_Index]' />
+            <map key='[Soil_Type]' value='[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA].[Soil_Type]' />
+            <map key='[Temperature_Celsius]' value='[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA].[Temperature_Celsius]' />
+            <map key='[Total_Precipitation_mm]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Total_Precipitation_mm]' />
+            <map key='[Weather_Condition]' value='[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA].[Weather_Condition]' />
+            <map key='[Year]' value='[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4].[Year]' />
+            <map key='[Yield_tons_per_hectare]' value='[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA].[Yield_tons_per_hectare]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>2</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Crop_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Crop_Type]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Crop_Type</remote-alias>
+              <ordinal>3</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average_Temperature_C</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Average_Temperature_C]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Average_Temperature_C</remote-alias>
+              <ordinal>4</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3102</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Precipitation_mm</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total_Precipitation_mm]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Total_Precipitation_mm</remote-alias>
+              <ordinal>5</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9601</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CO2_Emissions_MT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CO2_Emissions_MT]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>CO2_Emissions_MT</remote-alias>
+              <ordinal>6</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2513</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Crop_Yield_MT_per_HA</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Crop_Yield_MT_per_HA]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Crop_Yield_MT_per_HA</remote-alias>
+              <ordinal>7</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1103</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Extreme_Weather_Events</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Extreme_Weather_Events]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Extreme_Weather_Events</remote-alias>
+              <ordinal>8</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Irrigation_Access_%</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Irrigation_Access_%]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Irrigation_Access_%</remote-alias>
+              <ordinal>9</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3815</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pesticide_Use_KG_per_HA</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Pesticide_Use_KG_per_HA]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Pesticide_Use_KG_per_HA</remote-alias>
+              <ordinal>10</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3246</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fertilizer_Use_KG_per_HA</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Fertilizer_Use_KG_per_HA]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Fertilizer_Use_KG_per_HA</remote-alias>
+              <ordinal>11</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3903</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Soil_Health_Index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Soil_Health_Index]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Soil_Health_Index</remote-alias>
+              <ordinal>12</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3670</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Adaptation_Strategies</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Adaptation_Strategies]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Adaptation_Strategies</remote-alias>
+              <ordinal>13</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Economic_Impact_Million_USD</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Economic_Impact_Million_USD]</local-name>
+              <parent-name>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</parent-name>
+              <remote-alias>Economic_Impact_Million_USD</remote-alias>
+              <ordinal>14</ordinal>
+              <family>climate_change_impact_on_agriculture_2024.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7604</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region (crop_yield.csv)]</local-name>
+              <parent-name>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>15</ordinal>
+              <family>crop_yield.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Soil_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Soil_Type]</local-name>
+              <parent-name>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</parent-name>
+              <remote-alias>Soil_Type</remote-alias>
+              <ordinal>16</ordinal>
+              <family>crop_yield.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Crop</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Crop]</local-name>
+              <parent-name>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</parent-name>
+              <remote-alias>Crop</remote-alias>
+              <ordinal>17</ordinal>
+              <family>crop_yield.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rainfall_mm</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rainfall_mm]</local-name>
+              <parent-name>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</parent-name>
+              <remote-alias>Rainfall_mm</remote-alias>
+              <ordinal>18</ordinal>
+              <family>crop_yield.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Temperature_Celsius</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Temperature_Celsius]</local-name>
+              <parent-name>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</parent-name>
+              <remote-alias>Temperature_Celsius</remote-alias>
+              <ordinal>19</ordinal>
+              <family>crop_yield.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fertilizer_Used</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Fertilizer_Used]</local-name>
+              <parent-name>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</parent-name>
+              <remote-alias>Fertilizer_Used</remote-alias>
+              <ordinal>20</ordinal>
+              <family>crop_yield.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Irrigation_Used</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Irrigation_Used]</local-name>
+              <parent-name>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</parent-name>
+              <remote-alias>Irrigation_Used</remote-alias>
+              <ordinal>21</ordinal>
+              <family>crop_yield.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weather_Condition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weather_Condition]</local-name>
+              <parent-name>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</parent-name>
+              <remote-alias>Weather_Condition</remote-alias>
+              <ordinal>22</ordinal>
+              <family>crop_yield.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Days_to_Harvest</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Days_to_Harvest]</local-name>
+              <parent-name>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</parent-name>
+              <remote-alias>Days_to_Harvest</remote-alias>
+              <ordinal>23</ordinal>
+              <family>crop_yield.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>90</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Yield_tons_per_hectare</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Yield_tons_per_hectare]</local-name>
+              <parent-name>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</parent-name>
+              <remote-alias>Yield_tons_per_hectare</remote-alias>
+              <ordinal>24</ordinal>
+              <family>crop_yield.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Crop:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Barley&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Soybean&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Rice&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Maize&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Wheat&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cotton&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Crop_Yield_MT_per_HA:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:CO2_Emissions_MT:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:CO2_Emissions_MT:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Irrigation_Access_\%:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Fertilizer_Use_KG_per_HA:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Fertilizer_Use_KG_per_HA:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Average_Temperature_C:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Average_Temperature_C:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Crop_Yield_MT_per_HA:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Total_Precipitation_mm:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Soil_Health_Index:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Soil_Health_Index:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='climate_change_impact_on_agriculture_2024.csv' id='climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4'>
+            <properties context=''>
+              <relation connection='textscan.199xccq1v7p8we1bx1rr70nddi7i' name='climate_change_impact_on_agriculture_2024.csv' table='[C:\Users\TyQueece\Documents\Code Academy\Official Portfoilio\Agriculture Variations\climate_change_impact_on_agriculture_2024#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:O10001:no:A1:O10001:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='string' name='Region' ordinal='2' />
+                  <column datatype='string' name='Crop_Type' ordinal='3' />
+                  <column datatype='real' name='Average_Temperature_C' ordinal='4' />
+                  <column datatype='real' name='Total_Precipitation_mm' ordinal='5' />
+                  <column datatype='real' name='CO2_Emissions_MT' ordinal='6' />
+                  <column datatype='real' name='Crop_Yield_MT_per_HA' ordinal='7' />
+                  <column datatype='integer' name='Extreme_Weather_Events' ordinal='8' />
+                  <column datatype='real' name='Irrigation_Access_%' ordinal='9' />
+                  <column datatype='real' name='Pesticide_Use_KG_per_HA' ordinal='10' />
+                  <column datatype='real' name='Fertilizer_Use_KG_per_HA' ordinal='11' />
+                  <column datatype='real' name='Soil_Health_Index' ordinal='12' />
+                  <column datatype='string' name='Adaptation_Strategies' ordinal='13' />
+                  <column datatype='real' name='Economic_Impact_Million_USD' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4' table='[Extract].[climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4]' type='table' />
+            </properties>
+          </object>
+          <object caption='crop_yield.csv' id='crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA'>
+            <properties context=''>
+              <relation connection='textscan.199xccq1v7p8we1bx1rr70nddi7i' name='crop_yield.csv' table='[crop_yield#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Region' ordinal='0' />
+                  <column datatype='string' name='Soil_Type' ordinal='1' />
+                  <column datatype='string' name='Crop' ordinal='2' />
+                  <column datatype='real' name='Rainfall_mm' ordinal='3' />
+                  <column datatype='real' name='Temperature_Celsius' ordinal='4' />
+                  <column datatype='boolean' name='Fertilizer_Used' ordinal='5' />
+                  <column datatype='boolean' name='Irrigation_Used' ordinal='6' />
+                  <column datatype='string' name='Weather_Condition' ordinal='7' />
+                  <column datatype='integer' name='Days_to_Harvest' ordinal='8' />
+                  <column datatype='real' name='Yield_tons_per_hectare' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA' table='[Extract].[crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Crop_Type]' />
+              <expression op='[Crop]' />
+            </expression>
+            <first-end-point object-id='climate_change_impact_on_agriculture_2024.csv_13022CCDFDA34295805ABC3599B128B4' />
+            <second-end-point object-id='crop_yield.csv_A5BE497A9FFE419BA53E56B12CFFFDAA' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Annual Economic Value by Country '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>USA Economic Value in Millions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_impact_on_agriculture_2024+' name='federated.0ka909a17j6qhn0zitmrw1bo9rjg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ka909a17j6qhn0zitmrw1bo9rjg'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Crop Yield MT per HA' datatype='real' name='[Crop_Yield_MT_per_HA]' role='measure' type='quantitative' />
+            <column caption='Economic Impact Million USD' datatype='real' name='[Economic_Impact_Million_USD]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Crop_Yield_MT_per_HA]' derivation='Sum' name='[sum:Crop_Yield_MT_per_HA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Economic_Impact_Million_USD]' derivation='Sum' name='[sum:Economic_Impact_Million_USD:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Country:nk]'>
+            <groupfilter function='member' level='[none:Country:nk]' member='&quot;USA&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='body-type' id='annotation_0' value='box' />
+            <format attr='rounding' id='annotation_0' value='small' />
+            <format attr='line-pattern-only' id='annotation_0' value='dashed' />
+            <format attr='stroke-size' id='annotation_0' value='0' />
+            <format attr='line-visibility' id='annotation_0' value='off' />
+            <format attr='fill-color' id='annotation_0' value='#f5f0efe6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Economic_Impact_Million_USD:qk]' />
+              <color column='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Economic_Impact_Million_USD:qk]' />
+              <lod column='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Crop_Yield_MT_per_HA:qk]' />
+              <text column='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <annotations>
+          <annotation class='area' id='0' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run> During 2015, United States of america had it&apos;s highest econiomic impact in millions.</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.0802365'>
+                  <node-reference />
+                </x-coord>
+                <y-coord cell-offset='0.0245874'>
+                  <node-reference />
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.1875'>
+                  <node-reference />
+                </x-coord>
+                <y-coord cell-offset='0.207627'>
+                  <node-reference />
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{51CFCB54-9122-4065-A22E-CDA5D315FDC3}' />
+    </worksheet>
+    <worksheet name='Avg Soil Heath Percentage'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_impact_on_agriculture_2024+' name='federated.0ka909a17j6qhn0zitmrw1bo9rjg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ka909a17j6qhn0zitmrw1bo9rjg'>
+            <column caption='Soil Health Index' datatype='real' name='[Soil_Health_Index]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Soil_Health_Index]' derivation='Avg' name='[avg:Soil_Health_Index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Soil_Health_Index:qk]' field-type='quantitative' max='72.0' min='60.0' range-type='fixed' reverse='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='36' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Soil_Health_Index:qk]' value='*' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Soil_Health_Index:qk]</rows>
+        <cols>[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Year:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' italic='true'>Highest Avg Soil Health</run>
+              <run>&#10;During year of 2009</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Soil_Health_Index:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Soil_Health_Index:qk]</field>
+                      <field>[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Year:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>69.285157894736855</value>
+                    <value>2009</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='119' y='19' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{4F7C72D9-A292-4F62-B48E-6D2199822E81}' />
+    </worksheet>
+    <worksheet name='Regional Correlation of Crops'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Correlation Map of  Yields Per hectrae within Regions</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run>This Heatmap represents the correlation of each Crops yield potential within each regional background. The higher shades of green means a more vauable production of agriculture while red shades are the oppisite. Otherwise, white represents the median balance.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_impact_on_agriculture_2024+' name='federated.0ka909a17j6qhn0zitmrw1bo9rjg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ka909a17j6qhn0zitmrw1bo9rjg'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Crop Type' datatype='string' name='[Crop_Type]' role='dimension' type='nominal' />
+            <column caption='Crop Yield MT per HA' datatype='real' name='[Crop_Yield_MT_per_HA]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Crop_Type]' derivation='None' name='[none:Crop_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Crop_Yield_MT_per_HA]' derivation='Sum' name='[sum:Crop_Yield_MT_per_HA:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Region:nk]' value='41' />
+            <format attr='height-header' value='17' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Crop_Yield_MT_per_HA:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Crop_Yield_MT_per_HA:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#9e3d22</color>
+                <color>#a7513a</color>
+                <color>#b16854</color>
+                <color>#bb8171</color>
+                <color>#c59c91</color>
+                <color>#cfb9b4</color>
+                <color>#d9d9d9</color>
+                <color>#a2c3a2</color>
+                <color>#73ad73</color>
+                <color>#4b974b</color>
+                <color>#2a812a</color>
+                <color>#116b11</color>
+                <color>#005500</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Crop_Yield_MT_per_HA:qk]' />
+              <text column='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Crop_Yield_MT_per_HA:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Crop_Type:nk]</rows>
+        <cols>([federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Country:nk] / [federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Region:nk])</cols>
+      </table>
+      <simple-id uuid='{03315B2C-CDF3-4D2A-8436-F9201DAE1450}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_impact_on_agriculture_2024+' name='federated.0ka909a17j6qhn0zitmrw1bo9rjg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ka909a17j6qhn0zitmrw1bo9rjg'>
+            <column datatype='string' name='[Crop]' role='dimension' type='nominal' />
+            <column caption='Soil Type' datatype='string' name='[Soil_Type]' role='dimension' type='nominal' />
+            <column caption='Yield tons per hectare' datatype='real' name='[Yield_tons_per_hectare]' role='measure' type='quantitative' />
+            <column-instance column='[Crop]' derivation='None' name='[none:Crop:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Soil_Type]' derivation='None' name='[none:Soil_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Yield_tons_per_hectare]' derivation='Sum' name='[sum:Yield_tons_per_hectare:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Crop:nk] / [federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Soil_Type:nk])</rows>
+        <cols>[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Yield_tons_per_hectare:qk]</cols>
+      </table>
+      <simple-id uuid='{82B6B4FA-E656-4B98-BFE6-54D1E83E92E3}' />
+    </worksheet>
+    <worksheet name='Variable Test'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Notable Variables among Crops</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_impact_on_agriculture_2024+' name='federated.0ka909a17j6qhn0zitmrw1bo9rjg' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ka909a17j6qhn0zitmrw1bo9rjg'>
+            <column caption='Average Temperature C' datatype='real' name='[Average_Temperature_C]' role='measure' type='quantitative' />
+            <column caption='CO2 Emissions MT' datatype='real' name='[CO2_Emissions_MT]' role='measure' type='quantitative' />
+            <column caption='Crop Type' datatype='string' name='[Crop_Type]' role='dimension' type='nominal' />
+            <column caption='Crop Yield MT per HA' datatype='real' name='[Crop_Yield_MT_per_HA]' role='measure' type='quantitative' />
+            <column caption='Fertilizer Use KG per HA' datatype='real' name='[Fertilizer_Use_KG_per_HA]' role='measure' type='quantitative' />
+            <column caption='Irrigation Access %' datatype='real' name='[Irrigation_Access_%]' role='measure' type='quantitative' />
+            <column caption='Soil Health Index' datatype='real' name='[Soil_Health_Index]' role='measure' type='quantitative' />
+            <column caption='Total Precipitation mm' datatype='real' name='[Total_Precipitation_mm]' role='measure' type='quantitative' />
+            <column-instance column='[Average_Temperature_C]' derivation='Avg' name='[avg:Average_Temperature_C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO2_Emissions_MT]' derivation='Avg' name='[avg:CO2_Emissions_MT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fertilizer_Use_KG_per_HA]' derivation='Avg' name='[avg:Fertilizer_Use_KG_per_HA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Irrigation_Access_%]' derivation='Avg' name='[avg:Irrigation_Access_%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Soil_Health_Index]' derivation='Avg' name='[avg:Soil_Health_Index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total_Precipitation_mm]' derivation='Avg' name='[avg:Total_Precipitation_mm:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Crop_Type]' derivation='None' name='[none:Crop_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Crop_Yield_MT_per_HA]' derivation='Sum' name='[sum:Crop_Yield_MT_per_HA:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Average_Temperature_C:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Irrigation_Access_\%:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:CO2_Emissions_MT:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Fertilizer_Use_KG_per_HA:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Average_Temperature_C:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Irrigation_Access_\%:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Total_Precipitation_mm:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:CO2_Emissions_MT:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Fertilizer_Use_KG_per_HA:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[avg:Soil_Health_Index:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[Multiple Values]' scope='cols' value='Intervals ' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[:Measure Names]' />
+              <lod column='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Crop_Yield_MT_per_HA:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Crop_Type:nk] / [federated.0ka909a17j6qhn0zitmrw1bo9rjg].[:Measure Names])</rows>
+        <cols>[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{5B1F2902-A986-4165-BBE3-3EF7FC12D3BD}' />
+    </worksheet>
+    <worksheet name='Year Dynamics (Yield /USD Cost)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Global Annual Dynamics (Yield / USD Sales)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_impact_on_agriculture_2024+' name='federated.0ka909a17j6qhn0zitmrw1bo9rjg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ka909a17j6qhn0zitmrw1bo9rjg'>
+            <column caption='Crop Yield MT per HA' datatype='real' name='[Crop_Yield_MT_per_HA]' role='measure' type='quantitative' />
+            <column caption='Economic Impact Million USD' datatype='real' name='[Economic_Impact_Million_USD]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Crop_Yield_MT_per_HA]' derivation='Sum' name='[sum:Crop_Yield_MT_per_HA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Economic_Impact_Million_USD]' derivation='Sum' name='[sum:Economic_Impact_Million_USD:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Economic_Impact_Million_USD:qk]' field-type='quantitative' max='229404.16417333347' min='120000.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Crop_Yield_MT_per_HA:qk]' field-type='quantitative' max='759.69327466666664' min='500.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Economic_Impact_Million_USD:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Crop_Yield_MT_per_HA:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Economic_Impact_Million_USD:qk] + [federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Crop_Yield_MT_per_HA:qk])</rows>
+        <cols>[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{D65FF238-BD50-49A0-9C28-ECD352D4D6C0}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ded4c3' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#00000000' />
+          <format attr='border-color' value='#555555' />
+          <format attr='border-style' value='solid' />
+          <format attr='border-width' value='4' />
+        </style-rule>
+      </style>
+      <size maxheight='860' maxwidth='1200' minheight='560' minwidth='1000' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='11' type-v2='layout-basic' w='100000' x='0' y='0' />
+        <zone h='11163' id='5' type-v2='text' w='52917' x='24000' y='814'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Ink Free' fontsize='36' italic='true'>Global Agricultural Anaylsis</run>
+          </formatted-text>
+        </zone>
+        <zone h='87093' id='7' name='Variable Test' w='33167' x='917' y='11977' />
+        <zone h='40930' id='8' name='Regional Correlation of Crops' w='64417' x='34750' y='11977' />
+        <zone h='8837' id='9' name='Regional Correlation of Crops' pane-specification-id='0' param='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Crop_Yield_MT_per_HA:qk]' type-v2='color' w='11667' x='85833' y='7209' />
+        <zone h='46512' id='10' name='Year Dynamics (Yield /USD Cost)' w='63750' x='35167' y='52442' />
+        <zone h='3953' id='12' type-v2='text' w='22250' x='1333' y='8721'>
+          <formatted-text>
+            <run>Favored Variables main consist of two: Avg. Irrigations % and Fertilizers</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='13' param='vert' type-v2='layout-flow' w='98666' x='667' y='930'>
+                <zone h='13372' id='5' type-v2='text' w='52917' x='21667' y='698'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontname='Ink Free' fontsize='36' italic='true'>Global Agricultural Anaylsis</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3953' id='12' type-v2='text' w='22250' x='1333' y='8721'>
+                  <formatted-text>
+                    <run>Favored Variables main consist of two: Avg. Irrigations % and Fertilizers</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='87093' id='7' is-fixed='true' name='Variable Test' w='33167' x='917' y='11977'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40930' id='8' is-fixed='true' name='Regional Correlation of Crops' w='64417' x='34750' y='11977'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8837' id='9' name='Regional Correlation of Crops' pane-specification-id='0' param='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Crop_Yield_MT_per_HA:qk]' type-v2='color' w='11667' x='85833' y='7209'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46512' id='10' is-fixed='true' name='Year Dynamics (Yield /USD Cost)' w='63750' x='35167' y='52442'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8BE1EA48-167C-4D86-BB36-00A86578B300}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Variable Test'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{85B4FF68-8E59-4607-9BD5-E1951F06EC79}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7E921F91-CDC8-497D-A0DB-8E996A7FDED7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Avg Soil Heath Percentage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B98AF14-39E9-44CF-905B-2A87F7427594}' />
+    </window>
+    <window class='worksheet' name='Regional Correlation of Crops'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Crop_Yield_MT_per_HA:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B88D7A95-B94A-452A-8E48-CD296930692A}' />
+    </window>
+    <window class='worksheet' name='Annual Economic Value by Country '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ka909a17j6qhn0zitmrw1bo9rjg].[sum:Economic_Impact_Million_USD:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AEB1E402-3C96-40A4-ACEC-A4DD661F98E8}' />
+    </window>
+    <window class='worksheet' name='Year Dynamics (Yield /USD Cost)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9CB88BA1-EAA6-4D39-BD8D-43139BCF298E}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Regional Correlation of Crops' />
+        <viewpoint name='Variable Test'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Year Dynamics (Yield /USD Cost)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{BC1FE5FD-910B-48DB-9F90-14E060FAC8E1}' />
+    </window>
+  </windows>
+</workbook>
