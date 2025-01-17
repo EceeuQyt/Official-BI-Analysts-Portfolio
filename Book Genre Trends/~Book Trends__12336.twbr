@@ -1,0 +1,2308 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='data' inline='true' name='federated.0221ixs15r48ad127xt9r1tcq46w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data' name='textscan.0nl42dp1q356sd184goo21bbxs39'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/TyQueece/Documents/Code Academy/Official Portfoilio/Book Genre Trends/data.csv' dataRefreshTime='' directory='C:/Users/TyQueece/Documents/Code Academy/Official Portfoilio/Book Genre Trends' filename='C:/Users/TyQueece/AppData/Local/Temp/TableauTemp/079625p1wz3s9x117xkb81l51jtw/data.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0nl42dp1q356sd184goo21bbxs39' name='data.csv' table='[data#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:L6811:no:A1:L6811:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='isbn13' ordinal='0' />
+            <column datatype='string' name='isbn10' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='string' name='subtitle' ordinal='3' />
+            <column datatype='string' name='authors' ordinal='4' />
+            <column datatype='string' name='categories' ordinal='5' />
+            <column datatype='string' name='thumbnail' ordinal='6' />
+            <column datatype='string' name='description' ordinal='7' />
+            <column datatype='integer' name='published_year' ordinal='8' />
+            <column datatype='real' name='average_rating' ordinal='9' />
+            <column datatype='integer' name='num_pages' ordinal='10' />
+            <column datatype='integer' name='ratings_count' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L6811:no:A1:L6811:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>40156</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>isbn13</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[isbn13]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>isbn13</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>isbn10</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[isbn10]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>isbn10</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subtitle</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subtitle]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>subtitle</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>authors</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[authors]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>authors</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categories</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[categories]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>categories</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thumbnail</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[thumbnail]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>thumbnail</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>published_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[published_year]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>published_year</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_rating]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>average_rating</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_pages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_pages]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>num_pages</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ratings_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ratings_count]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>ratings_count</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='data.csv' datatype='table' name='[__tableau_internal_object_id__].[data.csv_D74D0FA333E4475E8DABC83CD2513221]' role='measure' type='quantitative' />
+      <column caption='Authors' datatype='string' name='[authors]' role='dimension' type='nominal' />
+      <column caption='Average Rating' datatype='real' name='[average_rating]' role='measure' type='quantitative' />
+      <column caption='Categories' datatype='string' name='[categories]' role='dimension' type='nominal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Isbn10' datatype='string' name='[isbn10]' role='dimension' type='nominal' />
+      <column caption='Isbn13' datatype='integer' name='[isbn13]' role='measure' type='quantitative' />
+      <column caption='Num Pages' datatype='integer' name='[num_pages]' role='measure' type='quantitative' />
+      <column caption='Published Year' datatype='integer' name='[published_year]' role='dimension' type='quantitative' />
+      <column caption='Ratings Count' datatype='integer' name='[ratings_count]' role='measure' type='quantitative' />
+      <column caption='Subtitle' datatype='string' name='[subtitle]' role='dimension' type='nominal' />
+      <column caption='Thumbnail' datatype='string' name='[thumbnail]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/TyQueece/AppData/Local/Temp/TableauTemp/#TableauTemp_1888y26194z1fz1bce0bs09iygi3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/16/2025 10:41:33 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>isbn13</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[isbn13]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>isbn13</remote-alias>
+              <ordinal>0</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6810</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>isbn10</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[isbn10]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>isbn10</remote-alias>
+              <ordinal>1</ordinal>
+              <family>data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6810</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>2</ordinal>
+              <family>data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4161</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subtitle</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subtitle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subtitle</remote-alias>
+              <ordinal>3</ordinal>
+              <family>data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1630</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>authors</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[authors]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>authors</remote-alias>
+              <ordinal>4</ordinal>
+              <family>data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2229</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>categories</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[categories]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>categories</remote-alias>
+              <ordinal>5</ordinal>
+              <family>data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>351</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>thumbnail</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[thumbnail]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>thumbnail</remote-alias>
+              <ordinal>6</ordinal>
+              <family>data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6408</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>description</remote-alias>
+              <ordinal>7</ordinal>
+              <family>data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6212</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>published_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[published_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>published_year</remote-alias>
+              <ordinal>8</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>95</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_rating</remote-alias>
+              <ordinal>9</ordinal>
+              <family>data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>197</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_pages</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_pages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_pages</remote-alias>
+              <ordinal>10</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>825</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ratings_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ratings_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ratings_count</remote-alias>
+              <ordinal>11</ordinal>
+              <family>data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2279</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data.csv_D74D0FA333E4475E8DABC83CD2513221]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='data.csv' id='data.csv_D74D0FA333E4475E8DABC83CD2513221'>
+            <properties context=''>
+              <relation connection='textscan.0nl42dp1q356sd184goo21bbxs39' name='data.csv' table='[data#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:L6811:no:A1:L6811:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='isbn13' ordinal='0' />
+                  <column datatype='string' name='isbn10' ordinal='1' />
+                  <column datatype='string' name='title' ordinal='2' />
+                  <column datatype='string' name='subtitle' ordinal='3' />
+                  <column datatype='string' name='authors' ordinal='4' />
+                  <column datatype='string' name='categories' ordinal='5' />
+                  <column datatype='string' name='thumbnail' ordinal='6' />
+                  <column datatype='string' name='description' ordinal='7' />
+                  <column datatype='integer' name='published_year' ordinal='8' />
+                  <column datatype='real' name='average_rating' ordinal='9' />
+                  <column datatype='integer' name='num_pages' ordinal='10' />
+                  <column datatype='integer' name='ratings_count' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Amazon_genres (Amazon_genres) (2)' inline='true' name='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Amazon_genres' name='excel-direct.1l1tbc10wd284d1et8peh0pchvqg'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/TyQueece/Documents/Code Academy/Official Portfoilio/Book Genre Trends/Amazon_genres.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1l1tbc10wd284d1et8peh0pchvqg' name='Amazon_genres' table='[Amazon_genres$]' type='table'>
+          <columns gridOrigin='A1:K7929:no:A1:K7929:0' header='yes' outcome='6'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Title' ordinal='1' />
+            <column datatype='string' name='Author' ordinal='2' />
+            <column datatype='string' name='Main_Genre' ordinal='3' />
+            <column datatype='string' name='Sub_Genre' ordinal='4' />
+            <column datatype='string' name='Type' ordinal='5' />
+            <column datatype='real' name='IDR_Price' ordinal='6' />
+            <column datatype='real' name='USD_Price' ordinal='7' />
+            <column datatype='real' name='Rating' ordinal='8' />
+            <column datatype='integer' name='No. of People rated' ordinal='9' />
+            <column datatype='string' name='URLs' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Amazon_genres]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K7929:no:A1:K7929:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Amazon_genres]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[Amazon_genres]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Author</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Author]</local-name>
+            <parent-name>[Amazon_genres]</parent-name>
+            <remote-alias>Author</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Main_Genre</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Main_Genre]</local-name>
+            <parent-name>[Amazon_genres]</parent-name>
+            <remote-alias>Main_Genre</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub_Genre</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sub_Genre]</local-name>
+            <parent-name>[Amazon_genres]</parent-name>
+            <remote-alias>Sub_Genre</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[Amazon_genres]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IDR_Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IDR_Price]</local-name>
+            <parent-name>[Amazon_genres]</parent-name>
+            <remote-alias>IDR_Price</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>USD_Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[USD_Price]</local-name>
+            <parent-name>[Amazon_genres]</parent-name>
+            <remote-alias>USD_Price</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[Amazon_genres]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No. of People rated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No. of People rated]</local-name>
+            <parent-name>[Amazon_genres]</parent-name>
+            <remote-alias>No. of People rated</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>URLs</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[URLs]</local-name>
+            <parent-name>[Amazon_genres]</parent-name>
+            <remote-alias>URLs</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <column caption='IDR Price' datatype='real' name='[IDR_Price]' role='measure' type='quantitative' />
+      <column caption='Main Genre' datatype='string' name='[Main_Genre]' role='dimension' type='nominal' />
+      <column caption='Sub Genre' datatype='string' name='[Sub_Genre]' role='dimension' type='nominal' />
+      <column caption='UR Ls' datatype='string' name='[URLs]' role='dimension' type='nominal' />
+      <column caption='USD Price' datatype='real' name='[USD_Price]' role='measure' type='quantitative' />
+      <column caption='Amazon_genres' datatype='table' name='[__tableau_internal_object_id__].[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]' role='measure' type='quantitative' />
+      <column-instance column='[Main_Genre]' derivation='None' name='[none:Main_Genre:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Sub_Genre]' derivation='None' name='[none:Sub_Genre:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/TyQueece/AppData/Local/Temp/TableauTemp/#TableauTemp_0x8m6n81j2hxyc1e1sjgu0cidkae.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/16/2025 10:58:41 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Title</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Amazon_genres</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3417</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Author</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Author]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Author</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Amazon_genres</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2198</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Main_Genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Main_Genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Main_Genre</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Amazon_genres</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sub_Genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sub_Genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sub_Genre</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Amazon_genres</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>149</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Amazon_genres</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IDR_Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[IDR_Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IDR_Price</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Amazon_genres</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1086</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>USD_Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[USD_Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>USD_Price</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Amazon_genres</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1086</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rating</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Amazon_genres</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No. of People rated</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[No. of People rated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No. of People rated</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Amazon_genres</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1747</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>URLs</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[URLs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>URLs</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Amazon_genres</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7928</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Amazon!genres_C9263A6CAD23415887A7AB63387FD44A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Sub_Genre:nk]' palette='miller_stone_10_0' type='palette'>
+            <map to='#4f6980'>
+              <bucket>&quot;Action &amp; Adventure&quot;</bucket>
+            </map>
+            <map to='#4f6980'>
+              <bucket>&quot;Astronomy&quot;</bucket>
+            </map>
+            <map to='#4f6980'>
+              <bucket>&quot;Classic Fiction&quot;</bucket>
+            </map>
+            <map to='#4f6980'>
+              <bucket>&quot;Crime &amp; Thriller&quot;</bucket>
+            </map>
+            <map to='#4f6980'>
+              <bucket>&quot;Environmental Studies&quot;</bucket>
+            </map>
+            <map to='#4f6980'>
+              <bucket>&quot;Freedom &amp; Security&quot;</bucket>
+            </map>
+            <map to='#4f6980'>
+              <bucket>&quot;Holidays&quot;</bucket>
+            </map>
+            <map to='#4f6980'>
+              <bucket>&quot;Islam&quot;</bucket>
+            </map>
+            <map to='#4f6980'>
+              <bucket>&quot;Mathematics&quot;</bucket>
+            </map>
+            <map to='#4f6980'>
+              <bucket>&quot;Nursing&quot;</bucket>
+            </map>
+            <map to='#4f6980'>
+              <bucket>&quot;Programming &amp; Software Development&quot;</bucket>
+            </map>
+            <map to='#4f6980'>
+              <bucket>&quot;Self-Help&quot;</bucket>
+            </map>
+            <map to='#4f6980'>
+              <bucket>&quot;Sports&quot;</bucket>
+            </map>
+            <map to='#4f6980'>
+              <bucket>&quot;Triathlon&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Administration &amp; Policy&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Biographies &amp; Autobiographies&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Combat Sports &amp; Self-Defence&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Databases &amp; Big Data&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Ethnography&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Gardening &amp; Landscape Design&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Horror&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Language Learning&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Multicultural &amp; Interracial&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Paranormal&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Religious Studies&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Social &amp; Family Issues&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Test Preparation &amp; Review&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Western &amp; Frontier&quot;</bucket>
+            </map>
+            <map to='#7e756d'>
+              <bucket>&quot;Arts, Design and Education Exams&quot;</bucket>
+            </map>
+            <map to='#7e756d'>
+              <bucket>&quot;Cinema &amp; Broadcast&quot;</bucket>
+            </map>
+            <map to='#7e756d'>
+              <bucket>&quot;Cricket&quot;</bucket>
+            </map>
+            <map to='#7e756d'>
+              <bucket>&quot;Engineering Textbooks&quot;</bucket>
+            </map>
+            <map to='#7e756d'>
+              <bucket>&quot;Food, Drink &amp; Entertaining&quot;</bucket>
+            </map>
+            <map to='#7e756d'>
+              <bucket>&quot;Hobbies &amp; Games&quot;</bucket>
+            </map>
+            <map to='#7e756d'>
+              <bucket>&quot;Internet &amp; Social Media&quot;</bucket>
+            </map>
+            <map to='#7e756d'>
+              <bucket>&quot;Mangas&quot;</bucket>
+            </map>
+            <map to='#7e756d'>
+              <bucket>&quot;New Age &amp; Spirituality&quot;</bucket>
+            </map>
+            <map to='#7e756d'>
+              <bucket>&quot;Professional Certification Exams&quot;</bucket>
+            </map>
+            <map to='#7e756d'>
+              <bucket>&quot;Science, Nature &amp; Technology&quot;</bucket>
+            </map>
+            <map to='#7e756d'>
+              <bucket>&quot;Sporting Events &amp; Organisations&quot;</bucket>
+            </map>
+            <map to='#7e756d'>
+              <bucket>&quot;Travel &amp; Holiday Guides&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;Active Outdoor Pursuits&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;Athletics &amp; Gymnastics&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;Clean &amp; Wholesome&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;Crime, Thriller &amp; Mystery&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;Equestrian &amp; Animal Sports&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;Games &amp; Quizzes&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;Holidays &amp; Celebrations&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;Jainism&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;Medical Entrance&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;Olympiads &amp; Scholarship Exams&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;Reference&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;Short Stories&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;Study Guides &amp; Workbooks&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;True Accounts&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Adaptations&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Biographies&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Collections &amp; Anthologies&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Cycling&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Essays&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Games, Toys &amp; Activities&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Home &amp; House Maintenance&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Juggling&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Money &amp; Jobs&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Operating Systems&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Religion&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Small Town Romance&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Tax Law&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;Volleyball&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Ancient&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Business &amp; Finance&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Computers &amp; Technology&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Electrical &amp; Electronic Engineering&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Fantasy, Horror &amp; Science Fiction&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Hinduism&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Interactive &amp; Activity Books&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Literature &amp; Fiction&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Netball&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Political Ideologies&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Romantic Suspense&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Softball&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Traditional Stories&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Writing Guides&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;Anthropology&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;Cheerleading&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;Crafts, Hobbies &amp; Practical Interests&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;Enemies to Lovers&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;Field Sports&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;History&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;International School Boards&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;Mafia Romance&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;New Adult &amp; College&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;Pool, Billiards &amp; Snooker&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;Science Fiction &amp; Fantasy&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;Sport&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;Transportation &amp; Automotive&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Alpha Male&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Biology &amp; Life Sciences&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Comics&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Dictionaries &amp; Thesauruses&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Fairy Tales, Folk Tales &amp; Myths&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Geography &amp; Cultures&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Humour&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Later in Life&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Music&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Personal Transformation&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Research&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Social Sciences&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Theater &amp; Ballet&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Winter Sports&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;Animals &amp; Pets&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;Cars, Trains &amp; Things That Go&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;Contemporary&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;Encyclopaedias &amp; Reference Works&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;Fantasy, Science Fiction &amp; Horror&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;Historical Fiction&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;International Relations &amp; Globalization&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;Love Triangle&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;Network Administration&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;Polytechnics &amp; ITI&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;Science Fiction&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;Software&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;Training &amp; Coaching&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Amish&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Bowls, Bowling &amp; Petanque&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Comics &amp; Graphic Novels&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Economics&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Family, Personal &amp; Social Issues&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Growing Up &amp; Facts of Life&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Hurling&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Library &amp; Information Science&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Mysteries &amp; Curiosities&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Picture Books&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Romance&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Social Welfare &amp; Social Services&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Theory &amp; Criticism&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;Words, Language &amp; Grammar&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Analysis &amp; Strategy&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Buddhism&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Computer Science&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Education &amp; Reference&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Fantasy&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Handicrafts, Decorative Arts &amp; Crafts&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Industries&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Lifestyle &amp; Personal Style Guides&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Myths, Legends &amp; Sagas&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Poetry&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Romantic Comedy&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Society &amp; Culture&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Thrillers and Suspense&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;Workplace Romance&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Main_Genre:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Engineering&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Textbooks &amp; Study Guides&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Arts, Film &amp; Photography&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Religion&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Comics &amp; Mangas&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sciences, Technology &amp; Medicine&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Higher Education Textbooks&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Exam Preparation&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Travel&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Computing, Internet &amp; Digital Media&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Society &amp; Social Sciences&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Politics&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Biographies, Diaries &amp; True Accounts&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Romance&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Literature &amp; Fiction&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Crafts, Home &amp; Lifestyle&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sports&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;History&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Language, Linguistics &amp; Writing&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Medicine &amp; Health Sciences&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Reference&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Fantasy, Horror &amp; Science Fiction&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Crime, Thriller &amp; Mystery&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Teen &amp; Young Adult&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Business &amp; Economics&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;School Books&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Law&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Health, Family &amp; Personal Development&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Children&apos;s Books&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Science &amp; Mathematics&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Amazon_genres' id='Amazon!genres_C9263A6CAD23415887A7AB63387FD44A'>
+            <properties context=''>
+              <relation connection='excel-direct.1l1tbc10wd284d1et8peh0pchvqg' name='Amazon_genres' table='[Amazon_genres$]' type='table'>
+                <columns gridOrigin='A1:K7929:no:A1:K7929:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Title' ordinal='1' />
+                  <column datatype='string' name='Author' ordinal='2' />
+                  <column datatype='string' name='Main_Genre' ordinal='3' />
+                  <column datatype='string' name='Sub_Genre' ordinal='4' />
+                  <column datatype='string' name='Type' ordinal='5' />
+                  <column datatype='real' name='IDR_Price' ordinal='6' />
+                  <column datatype='real' name='USD_Price' ordinal='7' />
+                  <column datatype='real' name='Rating' ordinal='8' />
+                  <column datatype='integer' name='No. of People rated' ordinal='9' />
+                  <column datatype='string' name='URLs' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Alt. Rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Alterntive Avg. Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data' name='federated.0221ixs15r48ad127xt9r1tcq46w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0221ixs15r48ad127xt9r1tcq46w'>
+            <column caption='Average Rating' datatype='real' name='[average_rating]' role='measure' type='quantitative' />
+            <column-instance column='[average_rating]' derivation='Avg' name='[avg:average_rating:qk]' pivot='key' type='quantitative' />
+            <column caption='Categories' datatype='string' name='[categories]' role='dimension' type='nominal' />
+            <column-instance column='[categories]' derivation='None' name='[none:categories:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0221ixs15r48ad127xt9r1tcq46w].[none:categories:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0221ixs15r48ad127xt9r1tcq46w].[avg:average_rating:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0221ixs15r48ad127xt9r1tcq46w].[avg:average_rating:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0221ixs15r48ad127xt9r1tcq46w].[none:categories:nk]</rows>
+        <cols>[federated.0221ixs15r48ad127xt9r1tcq46w].[avg:average_rating:qk]</cols>
+      </table>
+      <simple-id uuid='{498E8F4A-D193-4C9C-9A4B-CC9ACC5F0C30}' />
+    </worksheet>
+    <worksheet name='Author&apos;s Views'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data' name='federated.0221ixs15r48ad127xt9r1tcq46w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0221ixs15r48ad127xt9r1tcq46w'>
+            <column caption='Authors' datatype='string' name='[authors]' role='dimension' type='nominal' />
+            <column-instance column='[authors]' derivation='None' name='[none:authors:nk]' pivot='key' type='nominal' />
+            <column caption='Ratings Count' datatype='integer' name='[ratings_count]' role='measure' type='quantitative' />
+            <column-instance column='[ratings_count]' derivation='Sum' name='[sum:ratings_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0221ixs15r48ad127xt9r1tcq46w].[none:authors:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0221ixs15r48ad127xt9r1tcq46w].[sum:ratings_count:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0221ixs15r48ad127xt9r1tcq46w].[none:authors:nk]</rows>
+        <cols>[federated.0221ixs15r48ad127xt9r1tcq46w].[sum:ratings_count:qk]</cols>
+      </table>
+      <simple-id uuid='{BA8ED670-9F37-4974-853B-00C82211C5A4}' />
+    </worksheet>
+    <worksheet name='Desired Media'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt; Format</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon_genres (Amazon_genres) (2)' name='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy'>
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column caption='USD Price' datatype='real' name='[USD_Price]' role='measure' type='quantitative' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[USD_Price]' derivation='Sum' name='[sum:USD_Price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[sum:USD_Price:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[sum:USD_Price:qk]</rows>
+        <cols>[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Type:nk]</cols>
+      </table>
+      <simple-id uuid='{0A81A5C6-708B-49E4-A118-8ED1F4D43139}' />
+    </worksheet>
+    <worksheet name='Genre  Distribution B'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sub Genres Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon_genres (Amazon_genres) (2)' name='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy'>
+            <column caption='Sub Genre' datatype='string' name='[Sub_Genre]' role='dimension' type='nominal' />
+            <column-instance column='[Sub_Genre]' derivation='Count' name='[cnt:Sub_Genre:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sub_Genre]' derivation='None' name='[none:Sub_Genre:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[cnt:Sub_Genre:qk]' />
+              <color column='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Sub_Genre:nk]' />
+              <text column='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Sub_Genre:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{39AC3B1C-72AE-4F23-927D-6030B4E9E140}' />
+    </worksheet>
+    <worksheet name='Genre Distribution A'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Main Genres Distributions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon_genres (Amazon_genres) (2)' name='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy'>
+            <column caption='Main Genre' datatype='string' name='[Main_Genre]' role='dimension' type='nominal' />
+            <column-instance column='[Main_Genre]' derivation='Count' name='[cnt:Main_Genre:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Main_Genre]' derivation='None' name='[none:Main_Genre:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Main_Genre:nk]' />
+              <size column='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[cnt:Main_Genre:qk]' />
+              <text column='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Main_Genre:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{425DB8F4-17AF-4FAC-94AD-791F39D4EB90}' />
+    </worksheet>
+    <worksheet name='Rating Popularity A'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Main Demogaphic </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon_genres (Amazon_genres) (2)' name='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy'>
+            <column caption='Main Genre' datatype='string' name='[Main_Genre]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Rating]' role='measure' type='quantitative' />
+            <column-instance column='[Rating]' derivation='Avg' name='[avg:Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Main_Genre]' derivation='None' name='[none:Main_Genre:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Main_Genre:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[avg:Rating:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Main_Genre:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[avg:Rating:qk]</rows>
+        <cols>[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Main_Genre:nk]</cols>
+      </table>
+      <simple-id uuid='{6C7D00F0-B2E8-457E-B46D-18452318CF2A}' />
+    </worksheet>
+    <worksheet name='Rating Popularity B'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sub Demographic</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon_genres (Amazon_genres) (2)' name='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy'>
+            <column datatype='real' name='[Rating]' role='measure' type='quantitative' />
+            <column caption='Sub Genre' datatype='string' name='[Sub_Genre]' role='dimension' type='nominal' />
+            <column-instance column='[Rating]' derivation='Avg' name='[avg:Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sub_Genre]' derivation='None' name='[none:Sub_Genre:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Sub_Genre:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[avg:Rating:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Sub_Genre:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[avg:Rating:qk]</rows>
+        <cols>[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Sub_Genre:nk]</cols>
+      </table>
+      <simple-id uuid='{030ED0B3-7EE1-4DF5-89CB-3DCB99E1CA74}' />
+    </worksheet>
+    <worksheet name='Sales A'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt; Main Genre</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon_genres (Amazon_genres) (2)' name='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy'>
+            <column caption='IDR Price' datatype='real' name='[IDR_Price]' role='measure' type='quantitative' />
+            <column caption='Main Genre' datatype='string' name='[Main_Genre]' role='dimension' type='nominal' />
+            <column caption='USD Price' datatype='real' name='[USD_Price]' role='measure' type='quantitative' />
+            <column-instance column='[Main_Genre]' derivation='None' name='[none:Main_Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[IDR_Price]' derivation='Sum' name='[sum:IDR_Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[USD_Price]' derivation='Sum' name='[sum:USD_Price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Main_Genre:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[sum:USD_Price:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[sum:USD_Price:qk]' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[sum:USD_Price:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[sum:IDR_Price:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Main_Genre:nk]</rows>
+        <cols>[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[sum:USD_Price:qk]</cols>
+      </table>
+      <simple-id uuid='{E99D4555-A97D-4682-88BA-C3ABC6EC16B5}' />
+    </worksheet>
+    <worksheet name='Sales B'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt; Sub Genre</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon_genres (Amazon_genres) (2)' name='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mprb5m0gl5cwx1gygcrb0ezt5hy'>
+            <column caption='IDR Price' datatype='real' name='[IDR_Price]' role='measure' type='quantitative' />
+            <column caption='Sub Genre' datatype='string' name='[Sub_Genre]' role='dimension' type='nominal' />
+            <column caption='USD Price' datatype='real' name='[USD_Price]' role='measure' type='quantitative' />
+            <column-instance column='[Sub_Genre]' derivation='None' name='[none:Sub_Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[IDR_Price]' derivation='Sum' name='[sum:IDR_Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[USD_Price]' derivation='Sum' name='[sum:USD_Price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Sub_Genre:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[sum:USD_Price:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[sum:IDR_Price:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Sub_Genre:nk]</rows>
+        <cols>[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[sum:USD_Price:qk]</cols>
+      </table>
+      <simple-id uuid='{0E5BA12C-FD0A-466A-A436-81564556BBEA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5eddc' />
+        </style-rule>
+      </style>
+      <size maxheight='760' maxwidth='1320' minheight='460' minwidth='1320' sizing-mode='range' />
+      <zones>
+        <zone h='64605' id='3' name='Genre Distribution A' w='35076' x='1136' y='1316' />
+        <zone h='81316' id='4' name='Genre Distribution A' pane-specification-id='0' param='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Main_Genre:nk]' type-v2='color' w='18864' x='38333' y='12632' />
+        <zone h='7763' id='5' type-v2='text' w='21894' x='36288' y='3816'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Impact' fontsize='36' italic='true'>Genre Trends</run>
+          </formatted-text>
+        </zone>
+        <zone h='31842' id='6' name='Author&apos;s Views' w='36894' x='606' y='66711' />
+        <zone h='97632' id='7' name='Sales A' w='40152' x='58788' y='1184' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97894' id='8' param='vert' type-v2='layout-flow' w='98788' x='606' y='1053'>
+                <zone fixed-size='280' h='97632' id='7' is-fixed='true' name='Sales A' w='40152' x='58788' y='1184'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='64605' id='3' is-fixed='true' name='Genre Distribution A' w='35076' x='1136' y='1316'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='81316' id='4' name='Genre Distribution A' pane-specification-id='0' param='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Main_Genre:nk]' type-v2='color' w='18864' x='38333' y='12632'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7763' id='5' type-v2='text' w='21894' x='36288' y='3816'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontname='Impact' fontsize='36' italic='true'>Genre Trends</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='242' h='31842' id='6' is-fixed='true' name='Author&apos;s Views' w='36894' x='606' y='66711'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5A547BFE-0DA5-4B70-917E-B41A21CBE9AE}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#efebe8' />
+        </style-rule>
+      </style>
+      <size maxheight='860' maxwidth='1220' minheight='560' minwidth='1220' sizing-mode='range' />
+      <zones>
+        <zone h='6860' id='3' type-v2='text' w='30738' x='34508' y='1279'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Impact' fontsize='36' italic='true'>Sub Genre Trends</run>
+          </formatted-text>
+        </zone>
+        <zone h='43837' id='4' name='Genre  Distribution B' w='39180' x='246' y='4186' />
+        <zone h='266163' id='5' name='Genre  Distribution B' pane-specification-id='0' param='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Sub_Genre:nk]' type-v2='color' w='23689' x='40246' y='9651' />
+        <zone h='54419' id='6' name='Alt. Rating' w='39180' x='328' y='44535' />
+        <zone h='91860' id='7' name='Sales B' w='35820' x='62869' y='7558' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='8' param='vert' type-v2='layout-flow' w='98688' x='656' y='930'>
+                <zone h='6860' id='3' type-v2='text' w='30738' x='34508' y='1279'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontname='Impact' fontsize='36' italic='true'>Sub Genre Trends</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43837' id='4' is-fixed='true' name='Genre  Distribution B' w='39180' x='246' y='4186'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='266163' id='5' name='Genre  Distribution B' pane-specification-id='0' param='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Sub_Genre:nk]' type-v2='color' w='23689' x='40246' y='9651'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91860' id='7' is-fixed='true' name='Sales B' w='35820' x='62869' y='7558'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54419' id='6' is-fixed='true' name='Alt. Rating' w='39180' x='328' y='44535'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{95A07B1D-22E9-4428-8FBC-E5120F94C881}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Entertainment Media Anaylsis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1316' minheight='964' minwidth='1316' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98784' x='608' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98784' x='608' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98784' x='608' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98784' x='608' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='Dashboard 1' id='1' />
+                  <story-point captured-sheet='Dashboard 2' id='2' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{E35BB438-28F4-40EC-AF31-52C00A358C5C}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Genre Distribution A'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='0' param='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Main_Genre:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{127089C7-4470-4E81-B824-186CDC7F2C8D}' />
+    </window>
+    <window class='worksheet' name='Genre  Distribution B'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Sub_Genre:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CA15CC11-387B-4D11-AFB1-0873E5E3E67A}' />
+    </window>
+    <window class='worksheet' name='Rating Popularity A'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Main_Genre:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6712F254-9465-42C5-B944-F902300C804A}' />
+    </window>
+    <window class='worksheet' name='Rating Popularity B'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1mprb5m0gl5cwx1gygcrb0ezt5hy].[none:Sub_Genre:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F81BB68F-2176-4ED3-8CFC-E793C9311C92}' />
+    </window>
+    <window class='worksheet' name='Alt. Rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{52169124-1E91-46C6-9F5A-E2A640CA1107}' />
+    </window>
+    <window class='worksheet' name='Desired Media'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D5984C0B-83FE-4B9B-9D14-94BDF00BE93A}' />
+    </window>
+    <window class='worksheet' name='Sales A'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0E67B433-7BA5-4595-8A8A-9B86F483B21B}' />
+    </window>
+    <window class='worksheet' name='Sales B'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3C6870A5-0287-47A0-87C2-AC88F2BEC55D}' />
+    </window>
+    <window class='worksheet' name='Author&apos;s Views'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{58E1469A-47DC-4C01-A505-92BF3F81905C}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Author&apos;s Views' />
+        <viewpoint name='Genre Distribution A' />
+        <viewpoint name='Sales A' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{50952244-51B4-46E4-96C0-E713C96EEF8D}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Alt. Rating' />
+        <viewpoint name='Genre  Distribution B' />
+        <viewpoint name='Sales B' />
+      </viewpoints>
+      <active id='7' />
+      <simple-id uuid='{961EB575-85D7-4857-8F20-6A5E00236213}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{3D5B5B02-762E-4D43-A084-4CB610536DB6}' />
+    </window>
+  </windows>
+</workbook>
