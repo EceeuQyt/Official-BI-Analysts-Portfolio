@@ -1,0 +1,38 @@
+-- Column names, Familiarization
+--id, full_name, email, zip, ip_adress
+Select * from transaction_data
+limit 5;
+
+-- Queries full_names and emails of transactions listing 20252 as the zip code.
+Select full_name, email 
+From transaction_data
+Where zip = 20252;
+
+-- Queries full_names and emails associated with these transactions of 'Art Vandelay' and beginning/ending with ' der ', space inclusive.
+SELECT full_name, email 
+FROM transaction_data
+WHERE full_name = 'Art Vandelay'
+   OR full_name LIKE '% der %';
+
+-- Queries ip_addresses and emails listed with these transactions of ip_adress beginning with '10.'.
+SELECT ip_address, email 
+FROM transaction_data
+WHERE ip_address Like '10.%';
+
+-- Queries emails ending with ‘temp_email.com’ as a domain.
+SELECT ip_address, email 
+FROM transaction_data
+WHERE email like '%temp_email.com';
+
+-- Queries a specific transaction occurring from an ip address sarts with ‘120.’ and their full name starts with ‘John’ using %.
+SELECT *
+FROM transaction_data
+WHERE full_name LIKE 'John%'
+  AND ip_address LIKE '120.%';
+
+-- Return only those customers residing in GA using Prefix zipcodes 30000-32700 to determine the best query for zip codes belonging to Georgia(GA). Uses between clause to create a range of values to Query, then order by clause from lowest to highest.
+-- Renames id to #, zip to zipcode
+SELECT id AS '#', zip AS 'Zipcode'
+FROM transaction_data
+WHERE zip Between 30000 and 32700
+Order by zip ASC;
